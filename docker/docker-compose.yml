@@ -1,0 +1,23 @@
+version:  '3'
+services:
+  datascience-notebook:
+    image: jupyter/datascience-notebook
+    volumes:
+      - ${LOCAL_WORKING_DIR}:/home/jovyan
+    ports:
+      - ${JUPYTER_PORT}:8888
+    container_name:   jupyter_notebook
+    command: ["start-notebook.sh", "--NotebookApp.password='${JUPYTHER_ACCESS_PASSWORD}'"]
+    environment:
+      - JUPYTER_ENABLE_LAB=${JUPYTER_ENABLE_LAB}
+    restart: unless-stopped
+  rstudio:
+    image: rocker/rstudio
+    volumes:
+      - ${LOCAL_WORKING_DIR}:/home/rstudio
+    ports:
+      - ${RSTUDIO_PORT}:8787
+    container_name:   rstudio
+    environment:
+      - PASSWORD=${RSTUDIO_ACCESS_PASSWORD}
+    restart: unless-stopped
