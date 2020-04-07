@@ -43,7 +43,7 @@ To enter Jupyter or RStudio you need to use the IP in your home range of IP's. F
 * http://192.168.1.XXX:8787 (RStudio)
 
 ## Working directory
-Inside analytics folder you will see a sub-folder called 'home' this folder will be mounted inside Jupyter and RStudio and shared between applications. All the content will be shared in real time in you computer, Jupyter and RStudio.
+Inside analytics folder you will see a sub-folder called 'home' this folder will be mounted inside Jupyter and RStudio and shared between applications. All the content will be shared in real time between you computer, Jupyter and RStudio.
 
 ## Stop analytics platform
 Enter analytics folder
@@ -59,11 +59,11 @@ Enter analytics folder
 
 > cd analytics
 
-Start the system
+Destroy the system
 
 > vagrant destroy
 
-This command will destroy the virtual machine and dockers the content inside 'home' folder will remain.
+This command will destroy the virtual machine and dockers. The content inside 'home' folder will remain.
 
 ## Manage resources
 This template uses a virtual machine with 6 cores and 4096 Mb of RAM. This settings can be modified configuring proper values in 'Vagrantfile'
