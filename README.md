@@ -5,6 +5,9 @@ To use this environment you will need:
   * vagrant plugin: vagrant-vbguest
 * Virtualbox: Tested version 6.1.4 (https://www.virtualbox.org/wiki/Downloads)
 
+## How it works
+This is a vagrant machine (Ubuntu 18.4) runing with Virtualbox. That virtual machine runs a couple of dockers inside (Jupyter and RStudio) using docker-compose. Containers exposes port 8888 for Jupyter and 8787 for RStudio. The vagrant machine uses a public IP so it is possible to access the dockers using virtual machine public IP.
+
 ## Install needed software
 Install Vagrant and Virtualbox. 
 After installation please install vagrant-vbguest plugin just running this command in terminal or shell:
@@ -62,8 +65,13 @@ Start the system
 
 This command will destroy the virtual machine and dockers the content inside 'home' folder will remain.
 
-## How it works
-This is a vagrant machine (Ubuntu 18.4) that runs a couple of dockers inside (Jupyter and RStudio). dockers exposes port 8888 for Jupyter and 8787 for RStudio. The vagrant machine uses a public IP so it is possible to access the dockers using vagrant public IP.
+## Manage resources
+This template uses a virtual machine with 6 cores and 4096 Mb of RAM. This settings can be modified configuring proper values in 'Vagrantfile'
+
+> memory=4096
+> cpus=6
+
+This values can be changed in any moment just be careful and perform the modification when the platform is not running. On start the changes will be applied.
 
 ## Previous work and adknowledge
 This work is based on:
