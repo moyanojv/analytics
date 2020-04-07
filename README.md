@@ -28,11 +28,11 @@ Start the system
 The first startup will take a while. The system will download and install everything for you.
 And the end of the install process you will see something like:
 
-> default: ------------------------------------------------------
+> default: ------------------------------------------------------   
 > default: IPs:    
 > default:     inet 10.0.2.XXX/24 brd 10.0.2.255 scope global dynamic enp0s3    
 > default:     inet 192.168.1.XXX/24 brd 192.168.1.255 scope global dynamic enp0s8    
-> default: ------------------------------------------------------
+> default: ------------------------------------------------------   
 
 To enter Jupyter or RStudio you need to use the IP in your home range of IP's. For example:
 
