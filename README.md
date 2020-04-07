@@ -45,6 +45,15 @@ Inside analytics folder you will see a sub-folder called 'home' this folder will
 ## How it works
 This is a vagrant machine (Ubuntu 18.4) that runs a couple of dockers inside (Jupyter and RStudio). dockers exposes port 8888 for Jupyter and 8787 for RStudio. The vagrant machine uses a public IP so it is possible to access the dockers using vagrant public IP.
 
+## Previous work and adknowledge
+This work is based on:
+* vagrant box ubuntu/bionic64: 
+  * https://app.vagrantup.com/ubuntu/boxes/bionic64
+* Jupyter container: 
+  * https://hub.docker.com/r/jupyter/datascience-notebook/  
+  * https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
+* RStudio container:
+  * https://hub.docker.com/r/rocker/rstudio/
 
 
 
