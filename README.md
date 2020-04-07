@@ -26,7 +26,7 @@ Start the system
 > vagrant up
 
 The first startup will take a while. The system will download and install everything for you.
-And the end of the install process you will see something like:
+At the end of the install process you will see something like:
 
 > default: ------------------------------------------------------   
 > default: IPs:    
