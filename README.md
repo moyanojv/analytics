@@ -39,8 +39,8 @@ At the end of the install process you will see something like:
 
 To enter Jupyter or RStudio you need to use the IP in your home range of IP's. For example:
 
-* http://192.168.1.XXX:8888 (Jupyter)
-* http://192.168.1.XXX:8787 (RStudio)
+* http://192.168.1.XXX:8888 (Jupyter) password: secret
+* http://192.168.1.XXX:8787 (RStudio) user: rstudio password: secret
 
 ## Working directory
 Inside analytics folder you will see a sub-folder called 'home' this folder will be mounted inside Jupyter and RStudio and shared between applications. All the content will be shared in real time between you computer, Jupyter and RStudio.
